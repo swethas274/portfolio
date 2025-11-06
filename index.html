@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swetha Sankar | AI Security, Bug Bounty & Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <style>
+      /* Custom scrollbar for a more fitting theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a0a;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #f97316; /* Orange accent */
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #fb923c;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      .main-container-with-light::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+            400px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+            rgba(249, 115, 22, 0.1), /* orange-500 with low opacity */
+            transparent 80%
+        );
+        z-index: 1; /* Above particles (z-0) but below content (z-10) */
+        pointer-events: none;
+        transition: background 0.1s ease-out; /* smooth transition */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "tsparticles-engine": "https://aistudiocdn.com/tsparticles-engine@^2.12.0",
+    "react-tsparticles": "https://aistudiocdn.com/react-tsparticles@^2.12.2",
+    "tsparticles-slim": "https://aistudiocdn.com/tsparticles-slim@^2.12.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body style="background-color: #0d1117;">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
