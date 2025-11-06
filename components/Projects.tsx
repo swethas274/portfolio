@@ -18,7 +18,7 @@ const SectionWrapper: React.FC<{ children: React.ReactNode; id: string; }> = ({ 
         className="min-h-screen flex flex-col justify-center items-center py-20"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         transition={{ duration: 0.8 }}
     >
         {children}
@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
         <SectionWrapper id="projects">
             <SectionTitle>My Projects</SectionTitle>
             <motion.div 
-                className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 w-full"
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-8 w-full"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
